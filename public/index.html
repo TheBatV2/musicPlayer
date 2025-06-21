@@ -1,0 +1,52 @@
+<head>
+  <!-- ...other tags... -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Music Player</h1>
+
+  <!-- Sticky audio player -->
+  <div id="player-controls" style="text-align:center; margin-bottom: 60px;">
+    <div id="audio-controls">
+      <button id="prev-btn" title="Previous">&#9664;&#9664;</button>
+      <audio id="audio" controls></audio>
+      <button id="next-btn" title="Skip">&#9654;&#9654;</button>
+    </div>
+  </div>
+
+  <div id="container">
+    <!-- Left: Songs -->
+    <div id="song-pane">
+      <div class="section-header">
+        <h2>All Songs</h2>
+        <p class="centered-label">Add Music:</p>
+        <form id="upload-form" action="/upload" method="POST" enctype="multipart/form-data">
+          <input type="file" name="musicFile" accept=".mp3" required />
+          <button type="submit">Upload</button>
+        </form>
+      </div>
+      <ul id="song-list"></ul>
+    </div>
+
+    <!-- Right: Playlists -->
+    <div id="playlist-pane">
+      <div class="section-header">
+        <h2>All Playlists</h2>
+        <p class="centered-label">Create Playlist:</p>
+        <div class="playlist-form-box">
+          <form id="new-playlist-form">
+            <input type="text" id="playlist-name" placeholder="New playlist name" required />
+            <button type="submit">Create</button>
+          </form>
+          <select id="active-playlist-select">
+            <option value="">Select playlist to add songs</option>
+          </select>
+        </div>
+      </div>
+      <ul id="playlist-list"></ul>
+    </div>
+  </div>
+  
+
+  <script src="script.js"></script>
+</body>

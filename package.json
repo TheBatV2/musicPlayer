@@ -1,0 +1,17 @@
+{
+  "name": "music-player",
+  "version": "1.0.0",
+  "description": "A web-based music player built with Node.js and Express",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.20.3",
+    "express": "^4.21.2",
+    "multer": "^2.0.1"
+  },
+  "keywords": []
+}
