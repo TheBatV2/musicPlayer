@@ -14,7 +14,7 @@ I created a sinlge dynamic web app that allows the user to upload mp3 files and 
 
 VS code
 
-{Htm;, CSS, Javascript, JSON
+{Html, CSS, Javascript, JSON
 
 # Useful Websites
 
